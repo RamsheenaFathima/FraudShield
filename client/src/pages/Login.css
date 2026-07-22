@@ -1,0 +1,131 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* darker cyber background */
+  background: radial-gradient(circle at top, #0f172a, #05080f);
+}
+
+/* LOGIN BOX WITH CYAN GLOW */
+.login-box {
+  width: 340px;
+  padding: 30px;
+  background: #0b0f1a;
+  border-radius: 12px;
+
+  border: 1px solid #00f7ff;
+
+  box-shadow:
+    0 0 10px #00f7ff,
+    0 0 25px #00f7ff,
+    0 0 50px rgba(0, 247, 255, 0.25);
+
+  text-align: center;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* hover glow stronger */
+.login-box:hover {
+  box-shadow:
+    0 0 15px #00f7ff,
+    0 0 35px #00f7ff,
+    0 0 70px rgba(0, 247, 255, 0.35);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #00f7ff;
+  letter-spacing: 1px;
+}
+
+/* INPUT STYLE */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  background: #1f2937;
+  color: white;
+
+  transition: 0.2s;
+}
+
+.login-box input:focus {
+  box-shadow: 0 0 8px #00f7ff;
+}
+
+/* PASSWORD BOX (for eye icon support) */
+.password-box {
+  position: relative;
+  width: 100%;
+}
+
+.password-box input {
+  padding-right: 40px;
+}
+
+/* EYE ICON */
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #00f7ff;
+}
+
+/* BUTTON */
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #00f7ff;
+  color: black;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-box button:hover {
+  background: #00c2cc;
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.brand-icon {
+  font-size: 50px;
+  color: #00f7ff;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px #00f7ff);
+}
+
+.brand h1 {
+  color: #00f7ff;
+  margin: 0;
+  font-size: 32px;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.7);
+}
+
+.brand p {
+  color: #94a3b8;
+  margin-top: 5px;
+  font-size: 13px;
+}
